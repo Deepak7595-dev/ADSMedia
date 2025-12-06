@@ -21,6 +21,8 @@
 
 | Integration | Type | Status | Description |
 |-------------|------|--------|-------------|
+| [npm SDK](#-npm-sdk) | SDK | ✅ Ready | JavaScript/TypeScript SDK |
+| [Python SDK](#-python-sdk) | SDK | ✅ Ready | Python SDK |
 | [WordPress](#-wordpress-plugin) | Plugin | ✅ Ready | Replace wp_mail() with ADSMedia API |
 | [WooCommerce](#-woocommerce-plugin) | Plugin | ✅ Ready | Send order emails via ADSMedia |
 | [n8n](#-n8n-community-node) | Community Node | ✅ Ready | Automate email workflows |

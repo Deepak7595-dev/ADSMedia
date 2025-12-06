@@ -34,6 +34,7 @@ export class ADSMedia implements INodeType {
 				type: 'options',
 				noDataExpression: true,
 				options: [
+					{ name: 'Connection', value: 'connection' },
 					{ name: 'Email', value: 'email' },
 					{ name: 'Campaign', value: 'campaign' },
 					{ name: 'List', value: 'list' },
@@ -43,7 +44,20 @@ export class ADSMedia implements INodeType {
 					{ name: 'Server', value: 'server' },
 					{ name: 'Account', value: 'account' },
 				],
-				default: 'email',
+				default: 'connection',
+			},
+
+			// ============ CONNECTION OPERATIONS ============
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions: { show: { resource: ['connection'] } },
+				options: [
+					{ name: 'Ping', value: 'ping', description: 'Test API connectivity and authentication', action: 'Test connection' },
+				],
+				default: 'ping',
 			},
 
 			// ============ EMAIL OPERATIONS ============
@@ -605,8 +619,19 @@ export class ADSMedia implements INodeType {
 				let responseData;
 				const baseUrl = 'https://api.adsmedia.live/v1';
 
+				// ============ CONNECTION ============
+				if (resource === 'connection') {
+					if (operation === 'ping') {
+						responseData = await this.helpers.requestWithAuthentication.call(this, 'adsMediaApi', {
+							method: 'GET',
+							url: `${baseUrl}/ping`,
+							json: true,
+						});
+					}
+				}
+
 				// ============ EMAIL ============
-				if (resource === 'email') {
+				else if (resource === 'email') {
 					if (operation === 'sendSingle') {
 						const body: Record<string, unknown> = {
 							to: this.getNodeParameter('to', i) as string,

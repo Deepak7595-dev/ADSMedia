@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adsmedia/n8n-nodes-adsmedia.git"
+    "url": "https://github.com/ADSMedia-ai/ADSMedia.git"
   },
   "main": "index.js",
   "scripts": {
