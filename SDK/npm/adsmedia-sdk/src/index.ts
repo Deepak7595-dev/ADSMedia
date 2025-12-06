@@ -254,11 +254,11 @@ export class ADSMedia {
   }
 
   async createCampaign(options: CreateCampaignOptions): Promise<{ id: number }> {
-    return this.request('POST', '/campaigns/create', options);
+    return this.request('POST', '/campaigns/create', options as unknown as Record<string, unknown>);
   }
 
   async updateCampaign(id: number, options: Partial<CreateCampaignOptions>): Promise<{ success: boolean }> {
-    return this.request('POST', `/campaigns/update?id=${id}`, options);
+    return this.request('POST', `/campaigns/update?id=${id}`, options as unknown as Record<string, unknown>);
   }
 
   async deleteCampaign(id: number): Promise<{ success: boolean }> {
@@ -275,7 +275,7 @@ export class ADSMedia {
   }
 
   async createList(options: CreateListOptions): Promise<{ id: number }> {
-    return this.request('POST', '/lists/create', options);
+    return this.request('POST', '/lists/create', options as unknown as Record<string, unknown>);
   }
 
   async deleteList(id: number): Promise<{ success: boolean }> {
