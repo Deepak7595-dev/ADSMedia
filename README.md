@@ -19,14 +19,32 @@
 
 ## 📦 Available Integrations
 
-| | | | |
-|:--|:--|:--|:--|
-| [📚 SDKs](#-sdks) | [🤖 AI & MCP](#-ai--mcp) | [⚡ Automation](#-automation) | [🌐 Frameworks](#-frameworks) |
-| [☁️ Serverless](#-serverless) | [🛒 E-commerce](#-e-commerce) | [📝 CMS](#-cms) | [👥 CRM](#-crm) |
-| [📊 Analytics](#-analytics) | [📈 Marketing](#-marketing) | [💬 Bots & Chat](#-bots--chat) | [🎨 No-Code](#-no-code) |
-| [📅 Scheduling](#-scheduling) | [👔 HR](#-hr) | [🎓 Education](#-education) | [🎨 Design](#-design) |
-| [📦 Shipping](#-shipping) | [💰 Finance](#-finance) | [🤝 Affiliate](#-affiliate) | [🏥 Healthcare](#-healthcare) |
-| [🏔️ Community](#-community) | [📋 Project](#-project) | [🔗 Webhooks](#-webhooks) | [🚀 CI/CD](#-cicd) |
+| Category | Integrations |
+|:---------|-------------:|
+| [📚 SDKs](#-sdks) | 5 |
+| [🤖 AI & MCP](#-ai--mcp) | 10 |
+| [⚡ Automation](#-automation) | 5 |
+| [🌐 Frameworks](#-frameworks) | 13 |
+| [☁️ Serverless](#-serverless) | 7 |
+| [🛒 E-commerce](#-e-commerce) | 6 |
+| [📝 CMS](#-cms) | 11 |
+| [👥 CRM](#-crm) | 8 |
+| [📊 Analytics](#-analytics) | 6 |
+| [📈 Marketing](#-marketing) | 5 |
+| [💬 Bots & Chat](#-bots--chat) | 6 |
+| [🎨 No-Code](#-no-code) | 11 |
+| [📅 Scheduling](#-scheduling) | 3 |
+| [👔 HR](#-hr) | 3 |
+| [🎓 Education](#-education) | 3 |
+| [🎨 Design](#-design) | 5 |
+| [📦 Shipping](#-shipping) | 2 |
+| [💰 Finance](#-finance) | 2 |
+| [🤝 Affiliate](#-affiliate) | 4 |
+| [🏥 Healthcare](#-healthcare) | 1 |
+| [🏔️ Community](#-community) | 1 |
+| [📋 Project](#-project) | 3 |
+| [🔗 Webhooks](#-webhooks) | 11 |
+| [🚀 CI/CD](#-cicd) | 1 |
 
 ---
 
