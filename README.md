@@ -19,140 +19,257 @@
 
 ## 📦 Available Integrations
 
-| Category | Integration | Description |
-|----------|-------------|-------------|
-| **📚 SDKs** | [npm SDK](#-npm-sdk) | JavaScript/TypeScript |
-| | [Python SDK](#-python-sdk) | Python |
-| | [PHP SDK](#-php-sdk) | Packagist |
-| | [.NET SDK](#-net-sdk) | NuGet |
-| | [Ruby SDK](#-ruby-sdk) | RubyGems |
-| **🤖 AI & MCP** | [Cursor IDE](#-cursor-ide-mcp) | Model Context Protocol |
-| | [Windsurf](#-windsurf) | AI IDE |
-| | [LangChain](#-langchain) | LLM agent tool |
-| | [CrewAI](#-crewai) | Multi-agent tool |
-| | [LlamaIndex](#-llamaindex) | LLM tool |
-| | [FlowiseAI](#-flowiseai) | Visual AI builder |
-| | [Dify](#-dify) | AI workflow tool |
-| | [AutoGPT](#-autogpt) | Autonomous agent |
-| | [Coze](#-coze) | AI chatbot |
-| | [OpenRouter](#-openrouter) | AI-generated emails |
-| **⚡ Automation** | [n8n](#-n8n-community-node) | Workflow automation |
-| | [Pipedream](#-pipedream) | Workflow automation |
-| | [Activepieces](#-activepieces) | Open-source |
-| | [Automatisch](#-automatisch) | Open-source Zapier |
-| | [Latenode](#-latenode) | Low-code workflows |
-| **🌐 Frameworks** | [Next.js](#-nextjs) | React SSR |
-| | [Express.js](#-expressjs) | Node.js |
-| | [NestJS](#-nestjs) | Node.js TypeScript |
-| | [Koa.js](#-koajs) | Node.js |
-| | [FastAPI](#-fastapi) | Python async |
-| | [Django](#-django) | Python |
-| | [Flask](#-flask) | Python micro |
-| | [Laravel](#-laravel) | PHP |
-| | [Rails](#-rails) | Ruby |
-| | [Spring Boot](#-spring-boot) | Java |
-| | [ASP.NET Core](#-aspnet-core) | C# |
-| | [Gin](#-gin) | Go |
-| | [Fiber](#-fiber) | Go |
-| **☁️ Serverless** | [Vercel](#-vercel) | Edge functions |
-| | [Netlify](#-netlify-plugin) | Build plugin |
-| | [Cloudflare Workers](#-cloudflare-workers) | Edge runtime |
-| | [AWS Lambda](#-aws-lambda) | Lambda |
-| | [Azure Functions](#-azure-functions) | Azure |
-| | [Supabase](#-supabase) | Edge functions |
-| | [Google Sheets](#-google-sheets) | Apps Script |
-| **🛒 E-commerce** | [WooCommerce](#-woocommerce-plugin) | WordPress |
-| | [Medusa](#-medusa) | Open-source Shopify |
-| | [Saleor](#-saleor) | GraphQL |
-| | [Vendure](#-vendure) | TypeScript |
-| | [Sylius](#-sylius) | PHP |
-| | [Spree](#-spree) | Ruby |
-| **📝 CMS** | [WordPress](#-wordpress-plugin) | wp_mail() replacement |
-| | [Strapi](#-strapi) | Headless CMS |
-| | [Directus](#-directus) | Headless CMS |
-| | [Payload CMS](#-payload-cms) | TypeScript CMS |
-| | [KeystoneJS](#-keystonejs) | GraphQL CMS |
-| | [Sanity](#-sanity) | Studio tool |
-| | [Drupal](#-drupal) | Mail plugin |
-| | [Joomla](#-joomla) | Mail plugin |
-| | [Prismic](#-prismic) | Content emails |
-| | [DatoCMS](#-datocms) | Content emails |
-| | [SeaTable](#-seatable) | Database emails |
-| **👥 CRM** | [Twenty](#-twenty) | Open-source CRM |
-| | [Attio](#-attio) | Modern CRM |
-| | [Folk](#-folk) | Relationship CRM |
-| | [Close](#-close) | Sales CRM |
-| | [Capsule](#-capsule) | Simple CRM |
-| | [Nutshell](#-nutshell) | Small business |
-| | [Nimble](#-nimble) | Social CRM |
-| | [Invoice Ninja](#-invoice-ninja) | Invoicing |
-| **📊 Analytics** | [Mixpanel](#-mixpanel) | Product analytics |
-| | [Amplitude](#-amplitude) | Behavioral |
-| | [Heap](#-heap) | Digital insights |
-| | [ProductBoard](#-productboard) | Product mgmt |
-| | [UserVoice](#-uservoice) | Feedback |
-| | [Fibery](#-fibery) | Workspace |
-| **📈 Marketing** | [Drip](#-drip) | Email automation |
-| | [Beehiiv](#-beehiiv) | Newsletter |
-| | [Buttondown](#-buttondown) | Newsletter |
-| | [Ortto](#-ortto) | Automation |
-| | [Ontraport](#-ontraport) | Automation |
-| **💬 Bots & Chat** | [Discord](#-discord-bot) | Slash commands |
-| | [Telegram](#-telegram-bot) | Chat commands |
-| | [Slack Bot](#-slack-bot) | Slash commands |
-| | [Mattermost](#-mattermost) | Slash commands |
-| | [Tidio](#-tidio) | Live chat |
-| | [Crisp](#-crisp) | Chat webhook |
-| **🎨 No-Code** | [Bubble](#-bubble) | API Connector |
-| | [Retool](#-retool) | Internal tools |
-| | [Appsmith](#-appsmith) | Internal tools |
-| | [Glide](#-glide) | Mobile apps |
-| | [FlutterFlow](#-flutterflow) | Flutter apps |
-| | [Softr](#-softr) | Airtable apps |
-| | [WeWeb](#-weweb) | Web apps |
-| | [Adalo](#-adalo) | Mobile apps |
-| | [Budibase](#-budibase) | Internal tools |
-| | [ToolJet](#-tooljet) | Internal tools |
-| | [Xano](#-xano) | Backend |
-| **📅 Scheduling** | [Cal.com](#-calcom) | Open-source Calendly |
-| | [Doodle](#-doodle) | Meeting polls |
-| | [Booksy](#-booksy) | Appointments |
-| **👔 HR** | [Workable](#-workable) | ATS |
-| | [JazzHR](#-jazzhr) | Recruiting |
-| | [Factorial](#-factorial) | HR management |
-| **🎓 Education** | [LearnDash](#-learndash) | WordPress LMS |
-| | [Moodle](#-moodle) | Open-source LMS |
-| | [Canvas LMS](#-canvas-lms) | Learning mgmt |
-| **🎨 Design** | [Figma](#-figma) | Export to email |
-| | [Unlayer](#-unlayer) | Email editor |
-| | [Loom](#-loom) | Video notifications |
-| | [Rows](#-rows) | Mail merge |
-| | [Weglot](#-weglot) | Localization |
-| **📦 Shipping** | [Shippo](#-shippo) | Shipping notifications |
-| | [EasyPost](#-easypost) | Tracking emails |
-| **💰 Finance** | [Wave](#-wave) | Invoicing |
-| | [Mercury](#-mercury) | Banking alerts |
-| **🤝 Affiliate** | [Post Affiliate Pro](#-post-affiliate-pro) | Affiliate tracking |
-| | [Refersion](#-refersion) | Affiliate platform |
-| | [Everflow](#-everflow) | Partner marketing |
-| | [Patreon](#-patreon) | Creator platform |
-| **🏥 Healthcare** | [Healthie](#-healthie) | Practice mgmt |
-| **🏔️ Community** | [Mighty Networks](#-mighty-networks) | Community platform |
-| **📋 Project** | [Linear](#-linear) | Issue tracking |
-| | [Taskade](#-taskade) | Task management |
-| | [Height](#-height) | Project mgmt |
-| **🔗 Webhooks** | [Generic Webhook](#-webhook-handler) | Multi-platform |
-| | [Form Webhooks](#-form-webhooks) | Tally, Typeform, etc |
-| | [E-commerce Webhooks](#-e-commerce-webhooks) | Stripe, Gumroad, etc |
-| | [Membership Webhooks](#-membership-webhooks) | Memberful, Circle, etc |
-| | [Scheduling Webhooks](#-scheduling-webhooks) | Acuity, Calendly, etc |
-| | [Analytics Webhooks](#-analytics-webhooks) | PostHog, etc |
-| | [Webinar Webhooks](#-webinar-webhooks) | Demio, etc |
-| | [Creator Webhooks](#-creator-webhooks) | Ko-fi, BMC, Skool |
-| | [Chat Webhooks](#-chat-webhooks) | Olark, Tawk.to, etc |
-| | [Healthcare Webhooks](#-healthcare-webhooks) | Jane, Cliniko, etc |
-| | [Additional Webhooks](#-additional-webhooks) | 15+ platforms |
-| **🚀 CI/CD** | [GitHub Action](#-github-action) | Workflow emails |
+### 📚 SDKs
+
+| Integration | Description |
+|:------------|:------------|
+| [npm SDK](#-npm-sdk) | JavaScript/TypeScript — `npm install @adsmedia/sdk` |
+| [Python SDK](#-python-sdk) | Python — `pip install adsmedia` |
+| [PHP SDK](#-php-sdk) | PHP Packagist — `composer require adsmedia/sdk` |
+| [.NET SDK](#-net-sdk) | C# NuGet — `dotnet add package ADSMedia.SDK` |
+| [Ruby SDK](#-ruby-sdk) | Ruby Gems — `gem install adsmedia` |
+
+### 🤖 AI & MCP
+
+| Integration | Description |
+|:------------|:------------|
+| [Cursor IDE](#-cursor-ide-mcp) | Model Context Protocol for AI-powered IDE |
+| [Windsurf](#-windsurf) | AI IDE integration with MCP support |
+| [LangChain](#-langchain) | LLM agent tool for Python applications |
+| [CrewAI](#-crewai) | Multi-agent AI framework tool |
+| [LlamaIndex](#-llamaindex) | LLM data framework tool |
+| [FlowiseAI](#-flowiseai) | Visual AI workflow builder tool |
+| [Dify](#-dify) | AI application development platform |
+| [AutoGPT](#-autogpt) | Autonomous AI agent plugin |
+| [Coze](#-coze) | AI chatbot platform plugin |
+| [OpenRouter](#-openrouter) | AI model router for email generation |
+
+### ⚡ Automation
+
+| Integration | Description |
+|:------------|:------------|
+| [n8n](#-n8n-community-node) | Open-source workflow automation node |
+| [Pipedream](#-pipedream) | Developer workflow automation platform |
+| [Activepieces](#-activepieces) | Open-source automation alternative |
+| [Automatisch](#-automatisch) | Open-source Zapier alternative |
+| [Latenode](#-latenode) | Low-code automation platform |
+
+### 🌐 Frameworks
+
+| Integration | Description |
+|:------------|:------------|
+| [Next.js](#-nextjs) | React SSR framework integration |
+| [Express.js](#-expressjs) | Node.js web framework middleware |
+| [NestJS](#-nestjs) | Node.js TypeScript framework module |
+| [Koa.js](#-koajs) | Node.js web framework middleware |
+| [FastAPI](#-fastapi) | Python async web framework |
+| [Django](#-django) | Python web framework backend |
+| [Flask](#-flask) | Python micro web framework |
+| [Laravel](#-laravel) | PHP web framework service provider |
+| [Rails](#-rails) | Ruby on Rails framework module |
+| [Spring Boot](#-spring-boot) | Java web framework service |
+| [ASP.NET Core](#-aspnet-core) | C# web framework integration |
+| [Gin](#-gin) | Go web framework middleware |
+| [Fiber](#-fiber) | Go Express-style framework |
+
+### ☁️ Serverless
+
+| Integration | Description |
+|:------------|:------------|
+| [Vercel](#-vercel) | Vercel Edge Functions deployment |
+| [Netlify](#-netlify-plugin) | Netlify Build Plugin for deploys |
+| [Cloudflare Workers](#-cloudflare-workers) | Edge runtime email sending |
+| [AWS Lambda](#-aws-lambda) | AWS Lambda function handler |
+| [Azure Functions](#-azure-functions) | Azure serverless functions |
+| [Supabase](#-supabase) | Supabase Edge Functions |
+| [Google Sheets](#-google-sheets) | Google Apps Script integration |
+
+### 🛒 E-commerce
+
+| Integration | Description |
+|:------------|:------------|
+| [WooCommerce](#-woocommerce-plugin) | WordPress e-commerce order emails |
+| [Medusa](#-medusa) | Open-source Shopify alternative |
+| [Saleor](#-saleor) | GraphQL e-commerce platform |
+| [Vendure](#-vendure) | TypeScript headless commerce |
+| [Sylius](#-sylius) | PHP e-commerce framework |
+| [Spree](#-spree) | Ruby e-commerce platform |
+
+### 📝 CMS
+
+| Integration | Description |
+|:------------|:------------|
+| [WordPress](#-wordpress-plugin) | Replace wp_mail() with ADSMedia |
+| [Strapi](#-strapi) | Headless CMS email plugin |
+| [Directus](#-directus) | Headless CMS extension |
+| [Payload CMS](#-payload-cms) | TypeScript headless CMS plugin |
+| [KeystoneJS](#-keystonejs) | GraphQL headless CMS plugin |
+| [Sanity](#-sanity) | Sanity Studio tool plugin |
+| [Drupal](#-drupal) | Drupal mail system plugin |
+| [Joomla](#-joomla) | Joomla mail system plugin |
+| [Prismic](#-prismic) | Content-driven email sending |
+| [DatoCMS](#-datocms) | Content-driven email sending |
+| [SeaTable](#-seatable) | Database-driven email sending |
+
+### 👥 CRM
+
+| Integration | Description |
+|:------------|:------------|
+| [Twenty](#-twenty) | Open-source CRM integration |
+| [Attio](#-attio) | Modern CRM contact emails |
+| [Folk](#-folk) | Relationship CRM integration |
+| [Close](#-close) | Sales CRM lead emails |
+| [Capsule](#-capsule) | Simple CRM contact emails |
+| [Nutshell](#-nutshell) | Small business CRM emails |
+| [Nimble](#-nimble) | Social CRM contact emails |
+| [Invoice Ninja](#-invoice-ninja) | Invoicing and billing emails |
+
+### 📊 Analytics
+
+| Integration | Description |
+|:------------|:------------|
+| [Mixpanel](#-mixpanel) | Product analytics cohort emails |
+| [Amplitude](#-amplitude) | Behavioral analytics segments |
+| [Heap](#-heap) | Digital insights segment emails |
+| [ProductBoard](#-productboard) | Product management updates |
+| [UserVoice](#-uservoice) | Customer feedback notifications |
+| [Fibery](#-fibery) | Connected workspace automation |
+
+### 📈 Marketing
+
+| Integration | Description |
+|:------------|:------------|
+| [Drip](#-drip) | E-commerce email automation |
+| [Beehiiv](#-beehiiv) | Newsletter platform integration |
+| [Buttondown](#-buttondown) | Simple newsletter platform |
+| [Ortto](#-ortto) | Marketing automation platform |
+| [Ontraport](#-ontraport) | Business automation platform |
+
+### 💬 Bots & Chat
+
+| Integration | Description |
+|:------------|:------------|
+| [Discord](#-discord-bot) | Discord bot with slash commands |
+| [Telegram](#-telegram-bot) | Telegram bot with chat commands |
+| [Slack Bot](#-slack-bot) | Slack bot with slash commands |
+| [Mattermost](#-mattermost) | Mattermost plugin commands |
+| [Tidio](#-tidio) | Live chat follow-up emails |
+| [Crisp](#-crisp) | Chat platform webhook handler |
+
+### 🎨 No-Code
+
+| Integration | Description |
+|:------------|:------------|
+| [Bubble](#-bubble) | Bubble.io API Connector plugin |
+| [Retool](#-retool) | Internal tools REST API |
+| [Appsmith](#-appsmith) | Internal tools REST API |
+| [Glide](#-glide) | Mobile apps via Zapier/Make |
+| [FlutterFlow](#-flutterflow) | Flutter apps API integration |
+| [Softr](#-softr) | Airtable apps custom code |
+| [WeWeb](#-weweb) | Web apps REST API plugin |
+| [Adalo](#-adalo) | Mobile apps external API |
+| [Budibase](#-budibase) | Internal tools REST datasource |
+| [ToolJet](#-tooljet) | Internal tools REST datasource |
+| [Xano](#-xano) | Backend external API call |
+
+### 📅 Scheduling
+
+| Integration | Description |
+|:------------|:------------|
+| [Cal.com](#-calcom) | Open-source Calendly webhook |
+| [Doodle](#-doodle) | Meeting poll notifications |
+| [Booksy](#-booksy) | Appointment booking emails |
+
+### 👔 HR
+
+| Integration | Description |
+|:------------|:------------|
+| [Workable](#-workable) | Applicant tracking system |
+| [JazzHR](#-jazzhr) | Recruiting software emails |
+| [Factorial](#-factorial) | HR management notifications |
+
+### 🎓 Education
+
+| Integration | Description |
+|:------------|:------------|
+| [LearnDash](#-learndash) | WordPress LMS course emails |
+| [Moodle](#-moodle) | Open-source LMS notifications |
+| [Canvas LMS](#-canvas-lms) | Learning management system |
+
+### 🎨 Design
+
+| Integration | Description |
+|:------------|:------------|
+| [Figma](#-figma) | Export designs to email HTML |
+| [Unlayer](#-unlayer) | Drag-and-drop email editor SDK |
+| [Loom](#-loom) | Video share notifications |
+| [Rows](#-rows) | Spreadsheet mail merge |
+| [Weglot](#-weglot) | Localized email translations |
+
+### 📦 Shipping
+
+| Integration | Description |
+|:------------|:------------|
+| [Shippo](#-shippo) | Shipping tracking notifications |
+| [EasyPost](#-easypost) | Package tracking emails |
+
+### 💰 Finance
+
+| Integration | Description |
+|:------------|:------------|
+| [Wave](#-wave) | Invoicing and accounting emails |
+| [Mercury](#-mercury) | Business banking alerts |
+
+### 🤝 Affiliate
+
+| Integration | Description |
+|:------------|:------------|
+| [Post Affiliate Pro](#-post-affiliate-pro) | Affiliate tracking platform |
+| [Refersion](#-refersion) | Affiliate marketing platform |
+| [Everflow](#-everflow) | Partner marketing platform |
+| [Patreon](#-patreon) | Creator platform patron emails |
+
+### 🏥 Healthcare
+
+| Integration | Description |
+|:------------|:------------|
+| [Healthie](#-healthie) | Practice management platform |
+
+### 🏔️ Community
+
+| Integration | Description |
+|:------------|:------------|
+| [Mighty Networks](#-mighty-networks) | Community platform member emails |
+
+### 📋 Project
+
+| Integration | Description |
+|:------------|:------------|
+| [Linear](#-linear) | Issue tracking notifications |
+| [Taskade](#-taskade) | Task management notifications |
+| [Height](#-height) | Project management emails |
+
+### 🔗 Webhooks
+
+| Integration | Description |
+|:------------|:------------|
+| [Generic Webhook](#-webhook-handler) | Multi-platform webhook handler |
+| [Form Webhooks](#-form-webhooks) | Tally, Typeform, Jotform, Formspree |
+| [E-commerce Webhooks](#-e-commerce-webhooks) | Stripe, Gumroad, Paddle, Shopify |
+| [Membership Webhooks](#-membership-webhooks) | Memberful, Circle, Teachable, Kajabi |
+| [Scheduling Webhooks](#-scheduling-webhooks) | Acuity, Calendly, YouCanBook.me |
+| [Analytics Webhooks](#-analytics-webhooks) | PostHog, Plausible, Mixpanel |
+| [Webinar Webhooks](#-webinar-webhooks) | Demio, WebinarJam, Crowdcast |
+| [Creator Webhooks](#-creator-webhooks) | Ko-fi, Buy Me a Coffee, Skool |
+| [Chat Webhooks](#-chat-webhooks) | Olark, Tawk.to, Hotjar, Canny |
+| [Healthcare Webhooks](#-healthcare-webhooks) | Jane, Cliniko, SimplePractice |
+| [Additional Webhooks](#-additional-webhooks) | 15+ more platforms supported |
+
+### 🚀 CI/CD
+
+| Integration | Description |
+|:------------|:------------|
+| [GitHub Action](#-github-action) | Send emails from GitHub workflows |
 
 ---
 
