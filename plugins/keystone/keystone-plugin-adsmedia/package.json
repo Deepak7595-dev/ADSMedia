@@ -1,0 +1,25 @@
+{
+  "name": "@adsmedia/keystone-plugin",
+  "version": "1.0.0",
+  "description": "Send emails via ADSMedia API from KeystoneJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "keystone",
+    "keystonejs",
+    "adsmedia",
+    "email"
+  ],
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@keystone-6/core": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
+

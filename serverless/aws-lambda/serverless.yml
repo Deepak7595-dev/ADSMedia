@@ -1,0 +1,44 @@
+service: adsmedia-email
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    ADSMEDIA_API_KEY: ${env:ADSMEDIA_API_KEY}
+
+functions:
+  sendEmail:
+    handler: handler.sendEmail
+    events:
+      - http:
+          path: /send
+          method: post
+          cors: true
+
+  sendBatch:
+    handler: handler.sendBatch
+    events:
+      - http:
+          path: /send/batch
+          method: post
+          cors: true
+
+  checkSuppression:
+    handler: handler.checkSuppression
+    events:
+      - http:
+          path: /check
+          method: get
+          cors: true
+
+  ping:
+    handler: handler.ping
+    events:
+      - http:
+          path: /ping
+          method: get
+          cors: true
+

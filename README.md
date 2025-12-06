@@ -54,6 +54,9 @@
 | [AutoGPT](#-autogpt) | Plugin | ✅ Ready | AI agent |
 | [Slack Bot](#-slack-bot) | Bot | ✅ Ready | Slash commands |
 | [Vercel](#-vercel) | Serverless | ✅ Ready | Edge functions |
+| [KeystoneJS](#-keystonejs) | Plugin | ✅ Ready | CMS hooks |
+| [AWS Lambda](#-aws-lambda) | Serverless | ✅ Ready | Lambda functions |
+| [Azure Functions](#-azure-functions) | Serverless | ✅ Ready | Azure serverless |
 
 ---
 
@@ -680,6 +683,41 @@ GET  /api/check?email=user@example.com
 ```
 
 📁 **Path:** `serverless/vercel/`
+
+---
+
+## ⌨️ KeystoneJS
+
+Plugin for KeystoneJS headless CMS.
+
+```typescript
+import { createADSMediaClient } from '@adsmedia/keystone-plugin';
+
+const client = createADSMediaClient({ apiKey: '...' });
+await client.send({ to, subject, html });
+```
+
+📁 **Path:** `plugins/keystone/keystone-plugin-adsmedia/`
+
+---
+
+## 🌩️ AWS Lambda
+
+Serverless functions with Serverless Framework.
+
+```bash
+serverless deploy
+```
+
+📁 **Path:** `serverless/aws-lambda/`
+
+---
+
+## ☁️ Azure Functions
+
+Microsoft Azure serverless functions.
+
+📁 **Path:** `serverless/azure-functions/`
 
 ---
 
