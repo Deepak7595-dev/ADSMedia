@@ -1,0 +1,19 @@
+{
+  "name": "@pipedream/adsmedia",
+  "version": "1.0.0",
+  "description": "ADSMedia Email API components for Pipedream",
+  "main": "dist/app/adsmedia.app.mjs",
+  "keywords": [
+    "pipedream",
+    "adsmedia",
+    "email",
+    "api"
+  ],
+  "homepage": "https://pipedream.com/apps/adsmedia",
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
+

@@ -27,6 +27,7 @@
 | [WooCommerce](#-woocommerce-plugin) | Plugin | ✅ Ready | Send order emails via ADSMedia |
 | [n8n](#-n8n-community-node) | Community Node | ✅ Ready | Automate email workflows |
 | [Cursor IDE](#-cursor-ide-mcp) | MCP | ✅ Ready | AI-powered email sending |
+| [Pipedream](#-pipedream) | iPaaS | ✅ Ready | Workflow automation |
 
 ---
 
@@ -229,6 +230,25 @@ Add to your `~/.cursor/mcp.json`:
 ```
 
 📁 **Path:** `MCP/cursor/`
+
+---
+
+## 🔄 Pipedream
+
+Official Pipedream components for workflow automation.
+
+### Available Actions
+- **Send Email** - Single transactional email
+- **Send Batch** - Up to 1000 marketing emails
+- **Create Campaign** - Create email campaigns
+- **Add Contacts** - Add contacts to lists
+- **Get Stats** - Campaign statistics
+
+### Setup
+1. In Pipedream → **Accounts** → Connect "ADSMedia"
+2. Enter your API key
+
+📁 **Path:** `iPaaS/pipedream/adsmedia/`
 
 ---
 
