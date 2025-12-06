@@ -70,6 +70,18 @@
 | [ASP.NET Core](#-aspnet-core) | Framework | ✅ Ready | C# web |
 | [Laravel](#-laravel) | Framework | ✅ Ready | PHP web |
 | [Rails](#-rails) | Framework | ✅ Ready | Ruby web |
+| [Bubble](#-bubble) | No-Code | ✅ Ready | API Connector |
+| [Retool](#-retool) | No-Code | ✅ Ready | REST API |
+| [Appsmith](#-appsmith) | No-Code | ✅ Ready | REST API |
+| [Glide](#-glide) | No-Code | ✅ Ready | Zapier/Make |
+| [FlutterFlow](#-flutterflow) | No-Code | ✅ Ready | API Calls |
+| [Softr](#-softr) | No-Code | ✅ Ready | Custom Code |
+| [WeWeb](#-weweb) | No-Code | ✅ Ready | REST API |
+| [Adalo](#-adalo) | No-Code | ✅ Ready | External Collection |
+| [Budibase](#-budibase) | No-Code | ✅ Ready | REST API |
+| [ToolJet](#-tooljet) | No-Code | ✅ Ready | REST API |
+| [Xano](#-xano) | Backend | ✅ Ready | External API |
+| [Windsurf](#-windsurf) | MCP | ✅ Ready | AI IDE |
 
 ---
 
@@ -928,6 +940,129 @@ ADSMedia.client.send_email(
 ```
 
 📁 **Path:** `frameworks/rails/`
+
+---
+
+## 🫧 Bubble
+
+Bubble.io API Connector integration.
+
+```
+API Name: ADSMedia
+Authentication: Bearer Token
+Base URL: https://api.adsmedia.live/v1
+```
+
+📁 **Path:** `nocode/bubble/`
+
+---
+
+## 🔧 Retool
+
+Retool REST API integration for internal tools.
+
+```javascript
+// Query configuration
+const result = await ADSMedia.sendEmail.trigger({
+  to: emailInput.value,
+  subject: subjectInput.value,
+  html: contentEditor.value
+});
+```
+
+📁 **Path:** `nocode/retool/`
+
+---
+
+## 🏗️ Appsmith
+
+Appsmith REST datasource and queries.
+
+📁 **Path:** `nocode/appsmith/`
+
+---
+
+## ✨ Glide
+
+Glide API integration via Zapier/Make.
+
+📁 **Path:** `nocode/glide/`
+
+---
+
+## 📱 FlutterFlow
+
+FlutterFlow API calls integration.
+
+📁 **Path:** `nocode/flutterflow/`
+
+---
+
+## 🎨 Softr
+
+Softr custom code blocks and Zapier integration.
+
+📁 **Path:** `nocode/softr/`
+
+---
+
+## 🌐 WeWeb
+
+WeWeb REST API collections and workflows.
+
+📁 **Path:** `nocode/weweb/`
+
+---
+
+## 📲 Adalo
+
+Adalo external collections integration.
+
+📁 **Path:** `nocode/adalo/`
+
+---
+
+## 🏢 Budibase
+
+Budibase REST datasource and automations.
+
+📁 **Path:** `nocode/budibase/`
+
+---
+
+## 🛠️ ToolJet
+
+ToolJet REST API datasource and queries.
+
+📁 **Path:** `nocode/tooljet/`
+
+---
+
+## ⚡ Xano
+
+Xano external API integration for backend.
+
+📁 **Path:** `nocode/xano/`
+
+---
+
+## 🏄 Windsurf
+
+Windsurf IDE MCP integration (same as Cursor).
+
+```json
+{
+  "mcpServers": {
+    "adsmedia": {
+      "command": "npx",
+      "args": ["-y", "tsx", "path/to/MCP/cursor/src/index.ts"],
+      "env": { "ADSMEDIA_API_KEY": "your-api-key" }
+    }
+  }
+}
+```
+
+📁 **Path:** `MCP/windsurf/`
 
 ---
 
