@@ -1,73 +1,73 @@
 # ADSMedia MCP Server
 
-MCP (Model Context Protocol) сервер для интеграции [ADSMedia Email API](https://www.adsmedia.ai/api-docs) с Cursor IDE.
+MCP (Model Context Protocol) server for integrating [ADSMedia Email API](https://www.adsmedia.ai/api-docs) with Cursor IDE.
 
-## 🚀 Возможности
+## 🚀 Features
 
-Полный доступ к ADSMedia API через MCP:
+Full access to ADSMedia API via MCP:
 
 ### 📧 Email
-- **Отправка писем** — транзакционные и маркетинговые
-- **Batch отправка** — до 1000 получателей за раз с персонализацией
-- **Статус отправки** — отслеживание доставки
+- **Send emails** — transactional and marketing
+- **Batch sending** — up to 1000 recipients with personalization
+- **Delivery status** — track delivery
 
-### 📑 Кампании
-- Создание, редактирование, удаление кампаний
-- HTML шаблоны с плейсхолдерами
+### 📑 Campaigns
+- Create, edit, delete campaigns
+- HTML templates with placeholders
 
-### 📋 Списки и Контакты
-- Управление списками подписчиков
-- Добавление/удаление контактов
-- Кастомные поля
+### 📋 Lists & Contacts
+- Manage subscriber lists
+- Add/remove contacts
+- Custom fields
 
-### 📅 Расписания
-- Создание задач на отправку
-- Пауза/возобновление/остановка
+### 📅 Schedules
+- Create sending tasks
+- Pause/resume/stop
 
-### 🖥️ Серверы
-- Просмотр серверов отправки
-- Статус и лимиты
+### 🖥️ Servers
+- View sending servers
+- Status and limits
 
-### 🌐 Верификация доменов
-- Проверка SPF, DKIM, DMARC, MX, PTR
-- DNSSEC и TLSA валидация
+### 🌐 Domain Verification
+- Check SPF, DKIM, DMARC, MX, PTR
+- DNSSEC and TLSA validation
 
-### 📊 Статистика
-- Общая статистика
-- По кампаниям
-- Почасовая/дневная разбивка
-- География открытий
-- Отказы и провайдеры
+### 📊 Statistics
+- Overview statistics
+- By campaigns
+- Hourly/daily breakdown
+- Opens geography
+- Bounces and providers
 
-### ⚡ События
+### ⚡ Events
 - Opens, clicks, bounces, unsubscribes
 
 ### 🚫 Suppression
-- Проверка заблокированных email
+- Check blocked emails
 
-### 👤 Аккаунт
-- Информация об аккаунте
-- Использование и лимиты
-- API ключи
+### 👤 Account
+- Account information
+- Usage and limits
+- API keys
 
 ---
 
-## 📦 Установка
+## 📦 Installation
 
-### 1. Клонируйте репозиторий
+### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
-cd adsmedia-mcp
+git clone https://github.com/ADSMedia-ai/ADSMedia.git
+cd ADSMedia/MCP/cursor
 ```
 
-### 2. Установите зависимости
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Соберите проект
+### 3. Build the project
 
 ```bash
 npm run build
@@ -75,173 +75,173 @@ npm run build
 
 ---
 
-## ⚙️ Настройка Cursor IDE
+## ⚙️ Cursor IDE Configuration
 
-### Вариант 1: Глобальная конфигурация
+### Option 1: Global configuration
 
-Откройте глобальный файл конфигурации MCP:
+Open the global MCP config file:
 - **Windows:** `%APPDATA%\Cursor\User\globalStorage\cursor.mcp\config.json`
 - **macOS:** `~/Library/Application Support/Cursor/User/globalStorage/cursor.mcp/config.json`
 - **Linux:** `~/.config/Cursor/User/globalStorage/cursor.mcp/config.json`
 
-Добавьте конфигурацию:
+Add configuration:
 
 ```json
 {
   "mcpServers": {
     "adsmedia": {
       "command": "node",
-      "args": ["C:/path/to/adsmedia-mcp/dist/index.js"],
+      "args": ["C:/path/to/ADSMedia/MCP/cursor/dist/index.js"],
       "env": {
-        "ADSMEDIA_API_KEY": "ваш_api_ключ"
+        "ADSMEDIA_API_KEY": "your_api_key"
       }
     }
   }
 }
 ```
 
-### Вариант 2: Конфигурация проекта
+### Option 2: Project configuration
 
-Создайте файл `.cursor/mcp.json` в корне вашего проекта:
+Create `.cursor/mcp.json` in your project root:
 
 ```json
 {
   "mcpServers": {
     "adsmedia": {
       "command": "node",
-      "args": ["C:/path/to/adsmedia-mcp/dist/index.js"],
+      "args": ["C:/path/to/ADSMedia/MCP/cursor/dist/index.js"],
       "env": {
-        "ADSMEDIA_API_KEY": "ваш_api_ключ"
+        "ADSMEDIA_API_KEY": "your_api_key"
       }
     }
   }
 }
 ```
 
-> ⚠️ **Важно:** Замените `C:/path/to/adsmedia-mcp` на реальный путь к папке проекта.
+> ⚠️ **Important:** Replace `C:/path/to/ADSMedia` with the actual path to the project folder.
 
 ---
 
-## 🔑 Получение API ключа
+## 🔑 Getting API Key
 
-1. Зарегистрируйтесь на [adsmedia.ai](https://www.adsmedia.ai)
-2. Перейдите в настройки аккаунта
-3. Скопируйте ваш API ключ
+1. Sign up at [adsmedia.ai](https://www.adsmedia.ai)
+2. Go to account settings
+3. Copy your API key
 
 ---
 
-## 🛠️ Доступные инструменты (Tools)
+## 🛠️ Available Tools
 
 ### Authentication
-| Tool | Описание |
-|------|----------|
-| `adsmedia_ping` | Проверка соединения с API |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_ping` | Test API connection |
 
 ### Email
-| Tool | Описание |
-|------|----------|
-| `adsmedia_send_email` | Отправить транзакционное письмо |
-| `adsmedia_send_batch` | Отправить batch маркетинговых писем |
-| `adsmedia_send_status` | Получить статус отправки |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_send_email` | Send transactional email |
+| `adsmedia_send_batch` | Send batch marketing emails |
+| `adsmedia_send_status` | Get delivery status |
 
 ### Campaigns
-| Tool | Описание |
-|------|----------|
-| `adsmedia_list_campaigns` | Список кампаний |
-| `adsmedia_get_campaign` | Получить кампанию по ID |
-| `adsmedia_create_campaign` | Создать кампанию |
-| `adsmedia_update_campaign` | Обновить кампанию |
-| `adsmedia_delete_campaign` | Удалить кампанию |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_list_campaigns` | List campaigns |
+| `adsmedia_get_campaign` | Get campaign by ID |
+| `adsmedia_create_campaign` | Create campaign |
+| `adsmedia_update_campaign` | Update campaign |
+| `adsmedia_delete_campaign` | Delete campaign |
 
 ### Lists & Contacts
-| Tool | Описание |
-|------|----------|
-| `adsmedia_list_lists` | Список списков подписчиков |
-| `adsmedia_create_list` | Создать список |
-| `adsmedia_get_contacts` | Получить контакты из списка |
-| `adsmedia_add_contacts` | Добавить контакты |
-| `adsmedia_delete_contacts` | Удалить контакты |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_list_lists` | List subscriber lists |
+| `adsmedia_create_list` | Create list |
+| `adsmedia_get_contacts` | Get contacts from list |
+| `adsmedia_add_contacts` | Add contacts |
+| `adsmedia_delete_contacts` | Delete contacts |
 
 ### Schedules
-| Tool | Описание |
-|------|----------|
-| `adsmedia_list_schedules` | Список задач |
-| `adsmedia_create_schedule` | Создать задачу |
-| `adsmedia_pause_schedule` | Приостановить задачу |
-| `adsmedia_resume_schedule` | Возобновить задачу |
-| `adsmedia_stop_schedule` | Остановить задачу |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_list_schedules` | List tasks |
+| `adsmedia_create_schedule` | Create task |
+| `adsmedia_pause_schedule` | Pause task |
+| `adsmedia_resume_schedule` | Resume task |
+| `adsmedia_stop_schedule` | Stop task |
 
 ### Servers
-| Tool | Описание |
-|------|----------|
-| `adsmedia_list_servers` | Список серверов |
-| `adsmedia_get_server` | Информация о сервере |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_list_servers` | List servers |
+| `adsmedia_get_server` | Get server info |
 
 ### Domain Verification
-| Tool | Описание |
-|------|----------|
-| `adsmedia_verify_domain` | Проверка DNS записей |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_verify_domain` | Verify DNS records |
 
 ### Statistics
-| Tool | Описание |
-|------|----------|
-| `adsmedia_stats_overview` | Общая статистика |
-| `adsmedia_stats_campaign` | Статистика кампании |
-| `adsmedia_stats_hourly` | Почасовая статистика |
-| `adsmedia_stats_daily` | Дневная статистика |
-| `adsmedia_stats_countries` | География |
-| `adsmedia_stats_bounces` | Отказы |
-| `adsmedia_stats_providers` | По провайдерам |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_stats_overview` | Overview statistics |
+| `adsmedia_stats_campaign` | Campaign statistics |
+| `adsmedia_stats_hourly` | Hourly statistics |
+| `adsmedia_stats_daily` | Daily statistics |
+| `adsmedia_stats_countries` | Geography |
+| `adsmedia_stats_bounces` | Bounces |
+| `adsmedia_stats_providers` | By providers |
 
 ### Events
-| Tool | Описание |
-|------|----------|
-| `adsmedia_get_events` | Получить события |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_get_events` | Get events |
 
 ### Suppressions
-| Tool | Описание |
-|------|----------|
-| `adsmedia_check_suppression` | Проверить email на блокировку |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_check_suppression` | Check if email is blocked |
 
 ### Account
-| Tool | Описание |
-|------|----------|
-| `adsmedia_get_account` | Информация об аккаунте |
-| `adsmedia_get_usage` | Использование и лимиты |
-| `adsmedia_get_api_keys` | Получить API ключ |
-| `adsmedia_regenerate_api_key` | Сгенерировать новый API ключ |
+| Tool | Description |
+|------|-------------|
+| `adsmedia_get_account` | Account information |
+| `adsmedia_get_usage` | Usage and limits |
+| `adsmedia_get_api_keys` | Get API key |
+| `adsmedia_regenerate_api_key` | Regenerate API key |
 
 ---
 
-## 📝 Примеры использования
+## 📝 Usage Examples
 
-### Отправка письма
-
-```
-Отправь письмо на test@example.com с темой "Привет" и текстом "<h1>Hello!</h1>"
-```
-
-### Создание кампании
+### Send email
 
 ```
-Создай кампанию "Новогодняя рассылка" с темой "С Новым Годом!" и HTML контентом
+Send an email to test@example.com with subject "Hello" and body "<h1>Hello!</h1>"
 ```
 
-### Получить статистику
+### Create campaign
 
 ```
-Покажи статистику кампании с ID 123
+Create a campaign "New Year Newsletter" with subject "Happy New Year!" and HTML content
 ```
 
-### Проверить сервер
+### Get statistics
 
 ```
-Проверь DNS записи для сервера 15
+Show statistics for campaign ID 123
+```
+
+### Verify server
+
+```
+Check DNS records for server 15
 ```
 
 ---
 
-## 🔗 Ссылки
+## 🔗 Links
 
 - [ADSMedia API Documentation](https://www.adsmedia.ai/api-docs)
 - [ADSMedia Website](https://www.adsmedia.ai)
@@ -250,7 +250,6 @@ npm run build
 
 ---
 
-## 📄 Лицензия
+## 📄 License
 
 MIT
-
