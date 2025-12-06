@@ -1,0 +1,21 @@
+name: netlify-plugin-adsmedia
+inputs:
+  - name: to
+    description: Email recipient address
+    required: true
+  - name: subject_prefix
+    description: Subject prefix for success emails
+    default: "✅ Deploy Success"
+  - name: subject_prefix_error
+    description: Subject prefix for error emails
+    default: "❌ Deploy Failed"
+  - name: from_name
+    description: Sender display name
+    default: "Netlify Deploy"
+  - name: on_success
+    description: Send notification on successful deploy
+    default: true
+  - name: on_error
+    description: Send notification on failed deploy
+    default: true
+

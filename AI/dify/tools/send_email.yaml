@@ -1,0 +1,56 @@
+identity:
+  name: send_email
+  author: ADSMedia
+  label:
+    en_US: Send Email
+description:
+  human:
+    en_US: Send a transactional email via ADSMedia API
+  llm: Send an email to a recipient with the specified subject and content. Use for notifications, confirmations, and alerts.
+parameters:
+  - name: to
+    type: string
+    required: true
+    label:
+      en_US: To Email
+    human_description:
+      en_US: Recipient email address
+    llm_description: The email address of the recipient
+    form: llm
+  - name: subject
+    type: string
+    required: true
+    label:
+      en_US: Subject
+    human_description:
+      en_US: Email subject line
+    llm_description: The subject line of the email
+    form: llm
+  - name: html
+    type: string
+    required: true
+    label:
+      en_US: HTML Content
+    human_description:
+      en_US: HTML content of the email
+    llm_description: The HTML body content of the email
+    form: llm
+  - name: to_name
+    type: string
+    required: false
+    label:
+      en_US: To Name
+    human_description:
+      en_US: Recipient name (optional)
+    llm_description: The name of the recipient
+    form: llm
+  - name: from_name
+    type: string
+    required: false
+    label:
+      en_US: From Name
+    human_description:
+      en_US: Sender display name (optional)
+    llm_description: The display name of the sender
+    form: llm
+

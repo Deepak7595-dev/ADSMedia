@@ -1,0 +1,20 @@
+{
+  "name": "netlify-plugin-adsmedia",
+  "version": "1.0.0",
+  "description": "Send deployment notifications via ADSMedia Email API",
+  "main": "index.js",
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "adsmedia",
+    "email",
+    "notifications"
+  ],
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ADSMedia-ai/ADSMedia"
+  }
+}
+

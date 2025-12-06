@@ -1,0 +1,20 @@
+identity:
+  name: check_suppression
+  author: ADSMedia
+  label:
+    en_US: Check Email Suppression
+description:
+  human:
+    en_US: Check if an email address is suppressed (bounced, unsubscribed, or blocked)
+  llm: Check if an email address can receive emails. Use this before sending to verify deliverability.
+parameters:
+  - name: email
+    type: string
+    required: true
+    label:
+      en_US: Email
+    human_description:
+      en_US: Email address to check
+    llm_description: The email address to check for suppression status
+    form: llm
+

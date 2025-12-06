@@ -1,0 +1,19 @@
+identity:
+  author: ADSMedia
+  name: adsmedia
+  label:
+    en_US: ADSMedia
+  description:
+    en_US: Send emails via ADSMedia Email API
+  icon: icon.svg
+credentials_for_provider:
+  api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: API Key
+    placeholder:
+      en_US: Enter your ADSMedia API key
+    help:
+      en_US: Get your API key from https://www.adsmedia.ai
+

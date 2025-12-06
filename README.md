@@ -36,6 +36,8 @@
 | [CrewAI](#-crewai) | AI Tool | ✅ Ready | Multi-agent tool |
 | [Discord](#-discord-bot) | Bot | ✅ Ready | Slash commands |
 | [Telegram](#-telegram-bot) | Bot | ✅ Ready | Chat commands |
+| [Dify](#-dify) | AI Tool | ✅ Ready | AI workflow tool |
+| [Netlify](#-netlify-plugin) | Build Plugin | ✅ Ready | Deploy notifications |
 
 ---
 
