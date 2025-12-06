@@ -40,6 +40,8 @@
 | [Netlify](#-netlify-plugin) | Build Plugin | ✅ Ready | Deploy notifications |
 | [Strapi](#-strapi) | CMS Plugin | ✅ Ready | Headless CMS email |
 | [Medusa](#-medusa) | E-commerce | ✅ Ready | Order notifications |
+| [Directus](#-directus) | CMS Extension | ✅ Ready | Headless email |
+| [Payload CMS](#-payload-cms) | CMS Plugin | ✅ Ready | Headless email |
 
 ---
 
@@ -460,6 +462,35 @@ Notification service for Medusa e-commerce.
 ```
 
 📁 **Path:** `plugins/medusa/medusa-plugin-adsmedia/`
+
+---
+
+## 📂 Directus
+
+Extension for Directus headless CMS.
+
+```
+POST /adsmedia/send
+GET  /adsmedia/check?email=user@example.com
+GET  /adsmedia/ping
+```
+
+📁 **Path:** `plugins/directus/directus-extension-adsmedia/`
+
+---
+
+## 📦 Payload CMS
+
+Plugin for Payload CMS.
+
+```typescript
+import { getADSMediaService } from 'payload-plugin-adsmedia';
+
+const adsmedia = getADSMediaService();
+await adsmedia.send({ to, subject, html });
+```
+
+📁 **Path:** `plugins/payload-cms/payload-plugin-adsmedia/`
 
 ---
 

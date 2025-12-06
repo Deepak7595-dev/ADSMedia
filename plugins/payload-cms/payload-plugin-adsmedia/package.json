@@ -1,0 +1,26 @@
+{
+  "name": "payload-plugin-adsmedia",
+  "version": "1.0.0",
+  "description": "Send emails via ADSMedia API from Payload CMS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "payload",
+    "payload-plugin",
+    "adsmedia",
+    "email"
+  ],
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "peerDependencies": {
+    "payload": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "payload": "^2.0.0"
+  }
+}
+

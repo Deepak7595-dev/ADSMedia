@@ -1,0 +1,30 @@
+{
+  "name": "directus-extension-adsmedia",
+  "version": "1.0.0",
+  "description": "Send emails via ADSMedia API from Directus",
+  "type": "module",
+  "directus:extension": {
+    "type": "endpoint",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.0.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify"
+  },
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-extension-endpoint",
+    "adsmedia",
+    "email"
+  ],
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "devDependencies": {
+    "@directus/extensions-sdk": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+
