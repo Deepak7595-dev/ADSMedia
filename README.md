@@ -30,6 +30,82 @@
 
 ---
 
+## 📦 npm SDK
+
+Official JavaScript/TypeScript SDK for ADSMedia Email API.
+
+### Installation
+
+```bash
+npm install @adsmedia/sdk
+```
+
+### Quick Start
+
+```typescript
+import ADSMedia from '@adsmedia/sdk';
+
+const client = new ADSMedia({ apiKey: 'your-api-key' });
+
+// Test connection
+const ping = await client.ping();
+
+// Send email
+const result = await client.send({
+  to: 'user@example.com',
+  subject: 'Hello!',
+  html: '<h1>Welcome!</h1>',
+});
+```
+
+### Features
+- ✅ Full TypeScript support
+- ✅ Tree-shakeable ESM and CommonJS
+- ✅ Zero dependencies
+- ✅ All API endpoints covered
+
+📁 **Path:** `SDK/npm/adsmedia-sdk/`
+
+---
+
+## 🐍 Python SDK
+
+Official Python SDK for ADSMedia Email API.
+
+### Installation
+
+```bash
+pip install adsmedia
+```
+
+### Quick Start
+
+```python
+from adsmedia import ADSMedia
+
+client = ADSMedia(api_key='your-api-key')
+
+# Test connection
+ping = client.ping()
+
+# Send email
+result = client.send(
+    to='user@example.com',
+    subject='Hello!',
+    html='<h1>Welcome!</h1>',
+)
+```
+
+### Features
+- ✅ Full API coverage
+- ✅ Type hints for IDE support
+- ✅ Simple, Pythonic interface
+- ✅ Supports Python 3.8+
+
+📁 **Path:** `SDK/python/adsmedia/`
+
+---
+
 ## 🔌 WordPress Plugin
 
 Replace WordPress default `wp_mail()` function with ADSMedia API for better deliverability and tracking.
