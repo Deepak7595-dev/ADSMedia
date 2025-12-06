@@ -1,0 +1,25 @@
+{
+    "name": "adsmedia/sdk",
+    "description": "ADSMedia Email API SDK for PHP",
+    "type": "library",
+    "keywords": ["adsmedia", "email", "api", "sdk", "transactional", "marketing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ADSMedia",
+            "email": "dev@adsmedia.ai"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ADSMedia\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
+

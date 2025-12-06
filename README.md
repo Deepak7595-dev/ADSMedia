@@ -42,6 +42,7 @@
 | [Medusa](#-medusa) | E-commerce | ✅ Ready | Order notifications |
 | [Directus](#-directus) | CMS Extension | ✅ Ready | Headless email |
 | [Payload CMS](#-payload-cms) | CMS Plugin | ✅ Ready | Headless email |
+| [PHP SDK](#-php-sdk) | Packagist | ✅ Ready | composer require |
 
 ---
 
@@ -491,6 +492,30 @@ await adsmedia.send({ to, subject, html });
 ```
 
 📁 **Path:** `plugins/payload-cms/payload-plugin-adsmedia/`
+
+---
+
+## 🐘 PHP SDK
+
+Official PHP SDK for Packagist.
+
+```bash
+composer require adsmedia/sdk
+```
+
+```php
+<?php
+use ADSMedia\Client;
+
+$client = new Client('your-api-key');
+$result = $client->send([
+    'to' => 'user@example.com',
+    'subject' => 'Hello!',
+    'html' => '<h1>Welcome!</h1>',
+]);
+```
+
+📁 **Path:** `SDK/php/adsmedia-php/`
 
 ---
 
