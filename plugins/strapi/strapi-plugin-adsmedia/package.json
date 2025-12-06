@@ -1,0 +1,23 @@
+{
+  "name": "strapi-plugin-adsmedia",
+  "version": "1.0.0",
+  "description": "Send emails via ADSMedia API from Strapi",
+  "strapi": {
+    "displayName": "ADSMedia Email",
+    "name": "adsmedia",
+    "description": "Send emails via ADSMedia Email API",
+    "kind": "plugin"
+  },
+  "main": "./server/index.js",
+  "license": "MIT",
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "scripts": {
+    "develop": "strapi develop",
+    "build": "strapi build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0"
+  }
+}
+

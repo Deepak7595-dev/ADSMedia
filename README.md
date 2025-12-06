@@ -38,6 +38,8 @@
 | [Telegram](#-telegram-bot) | Bot | ✅ Ready | Chat commands |
 | [Dify](#-dify) | AI Tool | ✅ Ready | AI workflow tool |
 | [Netlify](#-netlify-plugin) | Build Plugin | ✅ Ready | Deploy notifications |
+| [Strapi](#-strapi) | CMS Plugin | ✅ Ready | Headless CMS email |
+| [Medusa](#-medusa) | E-commerce | ✅ Ready | Order notifications |
 
 ---
 
@@ -320,6 +322,144 @@ Send emails directly from spreadsheets using Apps Script.
 - View Usage Stats
 
 📁 **Path:** `plugins/google-sheets/`
+
+---
+
+## 🦜 LangChain
+
+LangChain tool for AI agents and LLM applications.
+
+```python
+from adsmedia_tool import get_adsmedia_tools
+
+tools = get_adsmedia_tools()
+agent = initialize_agent(tools, llm, agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION)
+agent.run("Send welcome email to user@example.com")
+```
+
+📁 **Path:** `AI/langchain/`
+
+---
+
+## 🚢 CrewAI
+
+Multi-agent tool for CrewAI workflows.
+
+```python
+from adsmedia_tool import get_adsmedia_tools
+
+email_agent = Agent(role="Email Specialist", tools=get_adsmedia_tools())
+```
+
+📁 **Path:** `AI/crewai/`
+
+---
+
+## 🤖 Discord Bot
+
+Send emails via Discord slash commands.
+
+**Commands:**
+- `/send to:email subject:text message:html` - Send email
+- `/check email:address` - Check suppression
+- `/usage` - View stats
+- `/ping` - Test connection
+
+📁 **Path:** `bots/discord/`
+
+---
+
+## 📱 Telegram Bot
+
+Send emails via Telegram chat commands.
+
+**Commands:**
+- `/send` - Interactive email sending
+- `/check <email>` - Check suppression
+- `/usage` - View stats
+- `/ping` - Test connection
+
+📁 **Path:** `bots/telegram/`
+
+---
+
+## 🧠 Dify
+
+Tool provider for Dify AI workflows and agents.
+
+**Tools:**
+- Send Email
+- Check Suppression
+
+📁 **Path:** `AI/dify/`
+
+---
+
+## 🌐 Netlify Plugin
+
+Deploy notification emails on success/failure.
+
+```toml
+[[plugins]]
+  package = "./netlify-plugin-adsmedia"
+  [plugins.inputs]
+    to = "team@example.com"
+```
+
+📁 **Path:** `serverless/netlify/netlify-plugin-adsmedia/`
+
+---
+
+## 🚀 Strapi
+
+Plugin for Strapi headless CMS.
+
+```javascript
+// config/plugins.js
+module.exports = {
+  adsmedia: {
+    enabled: true,
+    config: {
+      apiKey: process.env.ADSMEDIA_API_KEY,
+    },
+  },
+};
+```
+
+```javascript
+await strapi.plugin('adsmedia').service('email').send({
+  to: 'user@example.com',
+  subject: 'Hello!',
+  html: '<h1>Welcome!</h1>',
+});
+```
+
+📁 **Path:** `plugins/strapi/strapi-plugin-adsmedia/`
+
+---
+
+## 🛒 Medusa
+
+Notification service for Medusa e-commerce.
+
+**Supported events:**
+- `order.placed`
+- `order.shipment_created`
+- `order.canceled`
+- `customer.password_reset`
+
+```javascript
+// medusa-config.js
+{
+  resolve: 'medusa-plugin-adsmedia',
+  options: {
+    api_key: process.env.ADSMEDIA_API_KEY,
+    from_name: 'My Store',
+  },
+}
+```
+
+📁 **Path:** `plugins/medusa/medusa-plugin-adsmedia/`
 
 ---
 

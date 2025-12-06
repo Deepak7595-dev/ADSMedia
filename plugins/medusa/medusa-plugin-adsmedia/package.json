@@ -1,0 +1,23 @@
+{
+  "name": "medusa-plugin-adsmedia",
+  "version": "1.0.0",
+  "description": "Send transactional emails via ADSMedia API for Medusa",
+  "main": "index.js",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "adsmedia",
+    "email",
+    "transactional"
+  ],
+  "author": "ADSMedia <dev@adsmedia.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ADSMedia-ai/ADSMedia"
+  },
+  "peerDependencies": {
+    "@medusajs/medusa": "^1.0.0"
+  }
+}
+
