@@ -57,6 +57,9 @@
 | [KeystoneJS](#-keystonejs) | Plugin | ✅ Ready | CMS hooks |
 | [AWS Lambda](#-aws-lambda) | Serverless | ✅ Ready | Lambda functions |
 | [Azure Functions](#-azure-functions) | Serverless | ✅ Ready | Azure serverless |
+| [FastAPI](#-fastapi) | Framework | ✅ Ready | Python web |
+| [Express.js](#-expressjs) | Framework | ✅ Ready | Node.js web |
+| [Next.js](#-nextjs) | Framework | ✅ Ready | React SSR |
 
 ---
 
@@ -718,6 +721,48 @@ serverless deploy
 Microsoft Azure serverless functions.
 
 📁 **Path:** `serverless/azure-functions/`
+
+---
+
+## 🐍 FastAPI
+
+Python FastAPI middleware and client.
+
+```python
+from adsmedia_middleware import get_adsmedia_client
+
+client = get_adsmedia_client()
+await client.send(EmailRequest(to=to, subject=subject, html=html))
+```
+
+📁 **Path:** `frameworks/fastapi/`
+
+---
+
+## ⚡ Express.js
+
+Node.js Express middleware.
+
+```javascript
+app.use(adsmediaMiddleware());
+
+await req.adsmedia.send({ to, subject, html });
+```
+
+📁 **Path:** `frameworks/express/`
+
+---
+
+## ⏭️ Next.js
+
+Server actions and API routes for Next.js.
+
+```typescript
+import { sendEmail } from '@/lib/adsmedia';
+await sendEmail({ to, subject, html });
+```
+
+📁 **Path:** `frameworks/nextjs/`
 
 ---
 
