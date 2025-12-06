@@ -60,6 +60,16 @@
 | [FastAPI](#-fastapi) | Framework | ✅ Ready | Python web |
 | [Express.js](#-expressjs) | Framework | ✅ Ready | Node.js web |
 | [Next.js](#-nextjs) | Framework | ✅ Ready | React SSR |
+| [Django](#-django) | Framework | ✅ Ready | Python web |
+| [Flask](#-flask) | Framework | ✅ Ready | Python micro |
+| [NestJS](#-nestjs) | Framework | ✅ Ready | Node.js TS |
+| [Koa.js](#-koajs) | Framework | ✅ Ready | Node.js web |
+| [Gin](#-gin) | Framework | ✅ Ready | Go web |
+| [Fiber](#-fiber) | Framework | ✅ Ready | Go express |
+| [Spring Boot](#-spring-boot) | Framework | ✅ Ready | Java web |
+| [ASP.NET Core](#-aspnet-core) | Framework | ✅ Ready | C# web |
+| [Laravel](#-laravel) | Framework | ✅ Ready | PHP web |
+| [Rails](#-rails) | Framework | ✅ Ready | Ruby web |
 
 ---
 
@@ -766,6 +776,161 @@ await sendEmail({ to, subject, html });
 
 ---
 
+## 🐍 Django
+
+Python Django email backend and service.
+
+```python
+# settings.py
+EMAIL_BACKEND = 'adsmedia.ADSMediaEmailBackend'
+
+# Usage
+from adsmedia import get_client
+client = get_client()
+client.send(to='user@example.com', subject='Hello!', html='<h1>Hi!</h1>')
+```
+
+📁 **Path:** `frameworks/django/`
+
+---
+
+## 🌶️ Flask
+
+Python Flask extension and middleware.
+
+```python
+from adsmedia_flask import ADSMedia
+adsmedia = ADSMedia(app)
+
+# In routes
+result = g.adsmedia.send(to='user@example.com', subject='Hello!', html='<h1>Hi!</h1>')
+```
+
+📁 **Path:** `frameworks/flask/`
+
+---
+
+## 🦅 NestJS
+
+NestJS module with dependency injection.
+
+```typescript
+// app.module.ts
+ADSMediaModule.forRoot({ apiKey: 'your-key' })
+
+// In services
+await this.adsmedia.send({ to, subject, html });
+```
+
+📁 **Path:** `frameworks/nestjs/`
+
+---
+
+## 🌸 Koa.js
+
+Koa.js middleware and routes.
+
+```javascript
+app.use(adsmediaMiddleware({ apiKey: 'your-key' }));
+
+await ctx.adsmedia.send({ to, subject, html });
+```
+
+📁 **Path:** `frameworks/koa/`
+
+---
+
+## 🍸 Gin
+
+Go Gin middleware and handlers.
+
+```go
+r.Use(ADSMediaMiddleware(os.Getenv("ADSMEDIA_API_KEY")))
+
+client := GetADSMedia(c)
+client.Send(SendEmailRequest{To: to, Subject: subject, HTML: html})
+```
+
+📁 **Path:** `frameworks/gin/`
+
+---
+
+## ⚡ Fiber
+
+Go Fiber middleware and handlers.
+
+```go
+app.Use(ADSMediaMiddleware(os.Getenv("ADSMEDIA_API_KEY")))
+
+client := GetADSMedia(c)
+client.Send(SendEmailRequest{To: to, Subject: subject, HTML: html})
+```
+
+📁 **Path:** `frameworks/fiber/`
+
+---
+
+## ☕ Spring Boot
+
+Java Spring Boot service and controller.
+
+```java
+@Autowired
+private ADSMediaClient adsMediaClient;
+
+adsMediaClient.send(request);
+```
+
+📁 **Path:** `frameworks/spring-boot/`
+
+---
+
+## 💜 ASP.NET Core
+
+C# ASP.NET Core service and DI.
+
+```csharp
+builder.Services.AddADSMedia(builder.Configuration);
+
+await _client.SendAsync(new SendEmailRequest { To = to, Subject = subject, Html = html });
+```
+
+📁 **Path:** `frameworks/aspnet-core/`
+
+---
+
+## 🔴 Laravel
+
+PHP Laravel service provider and facade.
+
+```php
+// In controllers
+$adsmedia->send($to, $subject, $html);
+
+// Or using facade
+app('adsmedia')->send($email, $subject, $html);
+```
+
+📁 **Path:** `frameworks/laravel/`
+
+---
+
+## 💎 Rails
+
+Ruby on Rails module and controller.
+
+```ruby
+ADSMedia.client.send_email(
+  to: 'user@example.com',
+  subject: 'Hello!',
+  html: '<h1>Hi!</h1>'
+)
+```
+
+📁 **Path:** `frameworks/rails/`
+
+---
+
 ## 🔑 Getting Your API Key
 
 1. Go to [adsmedia.ai](https://www.adsmedia.ai)
@@ -822,4 +987,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">
   Made with ❤️ by <a href="https://www.adsmedia.ai">ADSMedia</a>
 </p>
+
 
