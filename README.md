@@ -1,5 +1,7 @@
 # 📧 ADSMedia - Simplified Email Marketing Solutions
 
+[![SafeSkill 79/100](https://img.shields.io/badge/SafeSkill-79%2F100_Passes%20with%20Notes-yellow)](https://safeskill.dev/scan/deepak7595-dev-adsmedia)
+
 ## 🚀 Getting Started
 
 Welcome to ADSMedia! This application provides easy integration with the ADSMedia Email API, making email marketing simple and effective.
